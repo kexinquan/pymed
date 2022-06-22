@@ -18,7 +18,7 @@ setup(
     keywords="PubMed PMC",
     url="https://github.com/kexinquan/pymed",
     # packages=find_packages(),
-    packages=["pymed"]
+    packages=["pymed"],
     install_requires=["requests>=2.20.0"],
     tests_require=["pytest"],
     long_description_content_type="text/markdown",
