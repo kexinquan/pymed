@@ -9,15 +9,16 @@ def read(fname):
 
 
 setup(
-    name="pymed_updated",
+    name="pymed",
     version=__version__,
-    author="Gijs Wobben",
-    author_email="gijswobben@gmail.com",
-    description=("Python library for access to PubMed"),
+    author="Kexin Quan",
+    author_email="kequan@ucsd.com",
+    description=("Python library for access to Updated PubMed"),
     license="MIT",
     keywords="PubMed PMC",
-    url="https://github.com/gijswobben/pymed",
-    packages=find_packages(),
+    url="https://github.com/kexinquan/pymed",
+    # packages=find_packages(),
+    packages=["pymed"]
     install_requires=["requests>=2.20.0"],
     tests_require=["pytest"],
     long_description_content_type="text/markdown",
