@@ -9,7 +9,7 @@ def read(fname):
 
 
 setup(
-    name="pymed",
+    name="pymed_updated",
     version=__version__,
     author="Gijs Wobben",
     author_email="gijswobben@gmail.com",
