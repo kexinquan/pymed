@@ -3,7 +3,7 @@ import requests
 import itertools
 
 import xml.etree.ElementTree as xml
-
+from lxml import etree
 from typing import Union
 
 from .helpers import batches
@@ -172,13 +172,15 @@ class PubMed(object):
         # Parse as XML
         root = xml.fromstring(response)
         # x = etree.parse(response)
+        # root = x.getroot()
+        # print(root)
         # print(etree.tostring(x, pretty_print=True))
 
         # Loop over the articles and construct article objects
         for article in root.iter("PubmedArticle"):
-            yield PubMedArticle(xml_element=article)
-        for book in root.iter("PubmedBookArticle"):
-            yield PubMedBookArticle(xml_element=book)
+            yield (PubMedArticle(xml_element=article))
+        # for book in root.iter("PubmedBookArticle"):
+        #     yield PubMedBookArticle(xml_element=book)
 
     def _getArticleIds(self, query, max_results):
         """ Helper method to retrieve the article IDs for a query.

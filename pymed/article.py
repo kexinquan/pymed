@@ -4,6 +4,7 @@ import datetime
 from xml.etree.ElementTree import Element
 from typing import TypeVar
 from typing import Optional
+from lxml import etree
 
 from .helpers import getContent
 
@@ -65,6 +66,7 @@ class PubMedArticle(object):
         return getContent(element=xml_element, path=path)
 
     def _extractAbstract(self: object, xml_element: TypeVar("Element")) -> str:
+        
         path = ".//AbstractText"
         return getContent(element=xml_element, path=path)
 
