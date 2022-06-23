@@ -3,7 +3,6 @@ import requests
 import itertools
 
 import xml.etree.ElementTree as xml
-from lxml import etree
 from typing import Union
 
 from .helpers import batches
