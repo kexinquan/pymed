@@ -1,5 +1,5 @@
 from typing import TypeVar
-import xml.etree.ElementTree as ET
+# import xml.etree.ElementTree as ET
 
 def batches(iterable: list, n: int = 1) -> list:
     """ Helper method that creates batches from an iterable.

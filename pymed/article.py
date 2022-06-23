@@ -4,7 +4,6 @@ import datetime
 from xml.etree.ElementTree import Element
 from typing import TypeVar
 from typing import Optional
-from lxml import etree
 
 from .helpers import getContent
 
