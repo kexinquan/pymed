@@ -1,4 +1,4 @@
-NEW E-UTIL UPDATE ON PUBMED API AFTER JUNE 2022.
+Kexin: NEW E-UTIL UPDATE ON PUBMED API AFTER JUNE 2022. Some minor bugs fixed to the package.
 
 # PyMed - PubMed Access through Python
 PyMed is a Python library that provides access to PubMed through the PubMed API.
